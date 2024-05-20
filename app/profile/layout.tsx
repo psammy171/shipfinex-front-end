@@ -17,6 +17,11 @@ const Layout = ({ children }: Props) => {
       title: "Profile",
       path: "/profile",
     },
+    {
+      id: "2",
+      title: "MetaMask Wallet",
+      path: "/profile/wallet",
+    },
   ];
 
   return (
