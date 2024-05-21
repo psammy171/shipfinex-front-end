@@ -1,5 +1,7 @@
-const Wallet = () => {
-  return <div>Wallet details</div>;
+import Wallet from "./Wallet";
+
+const WalletTab = () => {
+  return <Wallet />;
 };
 
-export default Wallet;
+export default WalletTab;

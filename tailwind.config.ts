@@ -28,6 +28,9 @@ const config: Config = {
         },
         error: "#B00020",
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
