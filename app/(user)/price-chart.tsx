@@ -41,25 +41,36 @@ const PriceChart = ({ label, identifier }: Props) => {
   }, [identifier]);
 
   return (
-    <div>
-      Price chart
-      <div className="w-[400px] border p-2 rounded shadow-lg">
-        <Line
-          data={{
-            labels: Array.from(new Set(stock))
-              .slice(points)
-              .slice(points)
-              .map(() => ""),
-            datasets: [
-              {
-                label: label,
-                data: Array.from(new Set(stock)).slice(points),
-                borderColor: "#0068FF",
+    <div className="w-[400px] bg-slate-100 p-2 rounded shadow-lg">
+      <p>{label}</p>
+      <Line
+        data={{
+          labels: Array.from(new Set(stock))
+            .slice(points)
+            .slice(points)
+            .map(() => ""),
+          datasets: [
+            {
+              label: label,
+              data: Array.from(new Set(stock)).slice(points),
+              borderColor: "#11710D",
+            },
+          ],
+        }}
+        options={{
+          scales: {
+            y: {
+              ticks: {
+                color: "black",
+                font: {
+                  family: "inherit",
+                  weight: "bold",
+                },
               },
-            ],
-          }}
-        />
-      </div>
+            },
+          },
+        }}
+      />
     </div>
   );
 };

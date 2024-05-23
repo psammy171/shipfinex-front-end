@@ -52,7 +52,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-wrap gap-4 justify-around">
+    <div className="flex flex-wrap gap-4 justify-around py-4">
       {trendingCryptos.map((crypto) => (
         <PriceChart key={crypto.id} {...crypto} />
       ))}
