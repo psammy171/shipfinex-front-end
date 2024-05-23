@@ -45,7 +45,7 @@ export default function Home() {
       identifier: "nearusdt@trade",
     },
     {
-      id: "8",
+      id: "9",
       label: "USD Coin",
       identifier: "usdcusdt@trade",
     },

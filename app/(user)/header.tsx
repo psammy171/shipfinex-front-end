@@ -11,7 +11,9 @@ const Header = () => {
   return (
     <div className="w-full h-12 bg-primary-700 text-white">
       <div className="max-w-[1300px] min-w-[300px] h-full mx-auto flex items-center px-2">
-        <Logo className="h-7 w-7" />
+        <Link href={"/"}>
+          <Logo className="h-7 w-7" />
+        </Link>
         <span className="flex-grow"></span>
         {status === "authenticated" ? (
           <>
