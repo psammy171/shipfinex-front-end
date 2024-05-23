@@ -41,24 +41,24 @@ const Password = () => {
 
   return (
     <div className="py-10">
-      <p className="text-center">Change Password</p>
+      <p className="text-center text-xl font-semibold">Change Password</p>
       <form
         className="flex flex-col max-w-[400px] mx-auto"
         onSubmit={onChangeHandler}
       >
-        <Label inputLabel="Old Password" />
+        <Label inputLabel="Old Password" className="mt-3" />
         <Input
           placeholder="Enter old password"
           type="password"
           ref={oldPasswordRef}
         />
-        <Label inputLabel="New Password" />
+        <Label inputLabel="New Password" className="mt-3" />
         <Input
           placeholder="Enter new password"
           type="password"
           ref={newPasswordRef}
         />
-        <Label inputLabel="Confirm Password" />
+        <Label inputLabel="Confirm Password" className="mt-3" />
         <Input
           placeholder="Confirm password"
           type="password"
